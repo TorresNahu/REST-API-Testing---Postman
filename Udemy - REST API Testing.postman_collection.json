@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "c8f1e454-5e58-4a76-8a3d-07e15045ee28",
+		"name": "Udemy - REST API Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Httpbin",
+			"item": [
+				{
+					"name": "GET Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://httpbin.org?myparameter=1&myparameter2=whatever",
+							"protocol": "https",
+							"host": [
+								"httpbin",
+								"org"
+							],
+							"query": [
+								{
+									"key": "myparameter",
+									"value": "1"
+								},
+								{
+									"key": "myparameter2",
+									"value": "whatever"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"John\",\n\t\"email\":\"john@example.com\"\n}"
+						},
+						"url": {
+							"raw": "https://httpbin.org/post",
+							"protocol": "https",
+							"host": [
+								"httpbin",
+								"org"
+							],
+							"path": [
+								"post"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
