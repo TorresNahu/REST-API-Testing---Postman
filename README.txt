@@ -1,0 +1,1 @@
+This repository is for all the exercises done during the Postman Course from Udemy.
